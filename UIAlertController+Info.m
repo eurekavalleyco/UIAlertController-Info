@@ -24,7 +24,7 @@ static char infoKey;
 
 - (void)setInfo:(NSDictionary *)info
 {
-    [AKDebugger logMethod:METHOD_NAME logType:AKLogTypeMethodName methodType:AKMethodTypeSetup customCategories:nil message:nil];
+    [AKDebugger logMethod:METHOD_NAME logType:AKLogTypeMethodName methodType:AKMethodTypeSetter customCategories:nil message:nil];
     
     objc_setAssociatedObject(self, &infoKey, info, OBJC_ASSOCIATION_RETAIN_NONATOMIC);
 }
